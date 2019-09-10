@@ -41,9 +41,14 @@ $(function(){
       settings: {
         arrows: false,
         centerMode: true,
+
+        focusOnSelect: true,
+        variableWidth: true,
+        centerPadding: '50px',
+
         slidesToShow: 1,
+        infinite: true,
         dots: true,
-        centerPadding: '5px',
       }
     }
   ]
