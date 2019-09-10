@@ -303,6 +303,7 @@ body {
       margin-bottom: 31px;
       @media (max-width: 768px) {
         display: block;
+        margin-bottom: 10px;
       }
     }
   }
@@ -381,13 +382,26 @@ body {
 
 .partners {
   padding: 52px 0 56px 0;
+  @media (max-width: 480px) {
+    padding-bottom: 20px;
+  }
   &__item {
     height: 62px;
     display: flex;
     align-items: center;
     justify-content: center;
+    @media (max-width: 480px) {
+      padding: 0 30px;
+      opacity: 0.6;
+
+    }
     img {
       border: none;
+    }
+  }
+  .slick-active {
+    .partners__item {
+      opacity: 1;
     }
   }
   .slick-dots {
@@ -398,6 +412,8 @@ body {
     margin-top: 25px;
     @media (max-width: 480px) {
       width: auto;
+      padding: 0;
+      margin-top: 40px;
     }
     li {
       width: 40px;
@@ -437,6 +453,7 @@ body {
   position: relative;
   max-width: 1370px;
   margin: 0 auto;
+  overflow: hidden;
   &__item {
     display: block;
   }
@@ -519,6 +536,11 @@ h2 {
       line-height: 0;
     }
   }
+  .carousel-arrow {
+    @media (max-width: 340px) {
+      display: none;
+    }
+  }
 }
 
 .card {
@@ -566,8 +588,14 @@ h2 {
 .about {
   text-align: center;
   padding: 70px 0 73px 0;
+  @media (max-width: 480px) {
+    padding: 15px 0;
+  }
   &__wrap {
     position: relative;
+    @media (max-width: 480px) {
+      padding: 0 10px;
+    }
   }
   &__text {
     padding: 26px 0 52px 0;
@@ -575,6 +603,11 @@ h2 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 99%;
+    @media (max-width: 340px) {
+      background-image: url(/images/sprite.svg#about);
+      background-size: cover;
+      padding: 20px 45px;
+    }
   }
   &__subtitle {
     text-transform: uppercase;
@@ -589,6 +622,7 @@ h2 {
   &__img {
     display: block;
     margin: 0 auto 26px auto;
+    max-width: 100%;
   }
   &__description {
     font-size: 14px;
@@ -612,6 +646,9 @@ h2 {
     margin: 0 auto;
     position: relative;
     bottom: 30px;
+    @media (max-width: 340px) {
+      bottom: 21px;
+    }
   }
 }
 
@@ -675,6 +712,9 @@ h2 {
   text-align: center;
   background: #E8F0F3;
   padding-top: 30px;
+  @media (max-width: 480px) {
+    padding-top: 15px;
+  }
   .full-carousel {
     margin-top: 33px;
   }
